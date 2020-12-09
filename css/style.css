@@ -104,13 +104,63 @@ label {
   border-radius: 50%;
   margin-left: 12px;
 }
-select{
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font: normal normal normal 16px Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    background-color: transparent;
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font: normal normal normal 16px Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  background-color: transparent;
+}
+.buttonParent {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.button {
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  color: #56595c;
+  opacity: 1;
+  background: #f5f5f5;
+  border: none;
+  font-weight: 400;
+  min-width: 140px;
+  padding: 7px 7px;
+  border: 1px solid #707070;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(190, 190, 190);
+}
+.submitButton {
+  margin-right: 15px;
+}
+.cancelButton {
+  text-decoration: none;
+  text-align: center;
+}
+@media only screen and (max-width: 960px) {
+  .form {
+    width: 85%;
+    padding: 44px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    margin-top: 10px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .buttonParent {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
