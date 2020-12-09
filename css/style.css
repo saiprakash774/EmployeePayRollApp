@@ -106,13 +106,18 @@ label {
 }
 select {
   padding: 12px;
+  padding-right: 50px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-left: 15px;
   resize: vertical;
   font: normal normal normal 16px Roboto;
   letter-spacing: 0px;
   color: #42515f;
   background-color: transparent;
+}
+.input{
+    margin-block-start: 20px;
 }
 .buttonParent {
   display: flex;

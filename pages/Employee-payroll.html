@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class="row-content">
-                <label class="label text" for="department">Choose your Salary: </label>
+                <label class="label text" for="department">Salary: </label>
                 <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100"
                     value="400000">
                 <output class="salary-output text" for="salary"> 400000</output>
@@ -79,7 +79,8 @@
             <div class="row-content">
                 <label class="label text" for="department">Start Date </label>
                 <div>
-                    <select name="Day" id="day">
+                    <select id="day" name="Day">
+                        <option value="day">Day</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -113,6 +114,7 @@
                         <option value="31">31</option>
                     </select>
                     <select name="Month" id="month">
+                        <option value="month">Month</option>
                         <option value="Jan">January</option>
                         <option value="Feb">Febuary</option>
                         <option value="March">March</option>
@@ -127,6 +129,7 @@
                         <option value="Dec">December</option>
                     </select>
                     <select name="year" id="Year">
+                        <option value="year">Year</option>
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
