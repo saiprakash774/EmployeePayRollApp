@@ -19,7 +19,7 @@
         </div>
     </header>
     <div id="form-Id" class="form-content">
-        <form class="form" action="#" onsubmit="save()" onreset="resetForm()">
+        <form class="form" action="#">
             <div class="form-head">Employee Payroll form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
@@ -77,19 +77,18 @@
                 <output class="salary-output text" for="salary"> 400000</output>
             </div>
             <div class="row-content">
-                <label class="label text" for="department">Start Date </label>
+                <label class="label text" for="date">Start Date </label>
                 <div>
                     <select id="day" name="Day">
-                        <option value="day">Day</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
@@ -114,29 +113,28 @@
                         <option value="31">31</option>
                     </select>
                     <select name="Month" id="month">
-                        <option value="month">Month</option>
-                        <option value="Jan">January</option>
-                        <option value="Feb">Febuary</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="Aug">August</option>
-                        <option value="Sept">September</option>
-                        <option value="Oct">Octomber</option>
-                        <option value="Nov">November</option>
-                        <option value="Dec">December</option>
+                        <option value="01">January</option>
+                        <option value="02">Febuary</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
                     </select>
-                    <select name="year" id="Year">
-                        <option value="year">Year</option>
+                    <select name="year" id="year">
                         <option value="2020">2020</option>
                         <option value="2019">2019</option>
                         <option value="2018">2018</option>
                         <option value="2017">2017</option>
                         <option value="2016">2016</option>
                     </select>
-                </div>
+                    <error-output class="date-error" for="text"></error-output>
+                </div>   
             </div>
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
@@ -145,14 +143,14 @@
             <div class="buttonParent">
                 <a href="./home.html" class="resetButton button cancelButton">Cancle</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
-                    <button type="reset" class="resetButton button">Reset</button>
+                    <button type="submit" class="button submitButton" id="submitButton" onclick="save()">Submit</button>
+                    <button type="reset" class="resetButton button" onclick="resetForm()">Reset</button>
                 </div>
             </div>
         </form>
     </div>
     <script src="../js/EmployeePayRollData.js"></script>
-    <script src="../js/EmployeePayRoleValidation.js"></script>
+    <script src="../js/EmployeePayRollValidation.js"></script>
 </body>
 
 </html>
